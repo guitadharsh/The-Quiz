@@ -1,0 +1,49 @@
+.auth {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+
+    &__tittle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p:nth-child(1) {
+            font-size: 5rem;
+            font-weight: 600;
+            color: var(--text-light);
+        }
+
+        p:nth-child(2) {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-light);
+            line-height: 0;
+        }
+    }
+
+    &__google_btn {
+        height: 3rem;
+        width: 18rem;
+        padding: 0 1.5rem;
+        margin-top: 3rem;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 8px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--bg-light);
+
+        img {
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+}
