@@ -1,0 +1,57 @@
+.public {
+    height: 100vh;
+    min-height: 100vh;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    margin: 10rem auto 5rem auto;
+
+    &__body {
+        width: 100%;
+        padding: 0 5rem;
+        max-width: 1500px;
+
+        p{
+            font-size: 18px;
+            margin-bottom: .4rem;
+        }
+    }
+
+    &__mygames {
+        width: 100%;
+        height: 9rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: flex;
+        gap: 4rem;
+        white-space: nowrap;
+        margin-bottom: 2rem;
+
+        &--item{
+            min-width: 13rem;
+            min-height: 9rem;
+            background-color: var(--bg-light);
+            cursor: pointer;
+            color: var(--text-dark);
+        }
+    }
+
+    &__listedgames {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        overflow: scroll;
+        padding-bottom: 2rem;
+
+        &--item {
+            width: 15rem;
+            min-height: 9rem;
+            background-color: var(--bg-light);
+        }
+    }
+
+}
