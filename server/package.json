@@ -1,0 +1,27 @@
+{
+  "name": "qwiz-express-server",
+  "version": "1.0.0",
+  "description": "The Quiz app is in its initial phase, using a traditional quiz format. I'm building it with MERN stack, utilizing Socket.io for real-time functionality. We plan to introduce additional gaming modes…",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guitadharsh/The-Quiz.git"
+  },
+  "author": "guitadharsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guitadharsh/The-Quiz/issues"
+  },
+  "homepage": "https://github.com/guitadharsh/The-Quiz#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "google-auth-library": "^9.2.0",
+    "mongoose": "^8.0.1",
+    "nodemon": "^3.0.1"
+  }
+}

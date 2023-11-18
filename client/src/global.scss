@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 @import './theme/components';
+@import './theme/gameconsole';
 
 @import './theme/theme';
 @import './theme/reset';
 @import './theme/auth';
-@import './theme/publicgames'
+@import './theme/publicgames';
+@import './theme/creategame';
+@import './theme/mygame';
+@import './theme/playground';

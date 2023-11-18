@@ -1,8 +1,10 @@
 import React from 'react'
 
-const MyGames = () => {
+const MyGames: React.FC = () => {
   return (
-    <div>MyGames</div>
+    <div>
+
+    </div>
   )
 }
 

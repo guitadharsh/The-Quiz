@@ -1,13 +1,14 @@
 :root {
     --primary-color: #E61313;
     --secondary-color: #130B29;
-
+    
     --bg-light: #D9D9D9;
     --bg-dark: var(--secondary-color);
-
+    
     --text-light: #FFFFFF;
     --text-dark: var(--secondary-color);
-
+    
+    --hover-color: #e613134c;
     --trans-bg : rgba(108, 84, 84, 0.13);
 }
 

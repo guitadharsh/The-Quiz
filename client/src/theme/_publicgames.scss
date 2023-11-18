@@ -4,7 +4,6 @@
     color: var(--text-light);
     display: flex;
     align-items: center;
-    // justify-content: center;
     flex-direction: column;
     margin: 10rem auto 5rem auto;
 
@@ -51,6 +50,7 @@
             width: 15rem;
             min-height: 9rem;
             background-color: var(--bg-light);
+            color: var(--text-dark);
         }
     }
 
