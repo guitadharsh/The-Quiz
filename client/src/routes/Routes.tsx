@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 import MainLayout from '../layout/MainLayout'
-import { Auth, NotFound, PublicGames, MyGames, CreateGame, PlayGround } from '../scenes'
+import { Auth, NotFound, PublicGames, MyGames, CreateGame, PlayGround, JoinGame } from '../scenes'
 
 const AppRoutes: React.FC = () => {
     return (
@@ -14,6 +14,7 @@ const AppRoutes: React.FC = () => {
                 <Route path="/my-games" element={<MyGames />} />
                 <Route path="/create-new-game" element={<CreateGame />} />
                 <Route path="/play-ground" element={<PlayGround />} />
+                <Route path="/join-game" element={<JoinGame />} />
             </Route>
         </Routes>
     )

@@ -4,3 +4,4 @@ export { default as PublicGames } from './PublicGames';
 export { default as MyGames } from './MyGames';
 export { default as CreateGame } from './CreateGame' 
 export { default as PlayGround } from './PlayGround' 
+export { default as JoinGame } from './JoinGame' 
