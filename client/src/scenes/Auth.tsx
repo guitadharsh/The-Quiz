@@ -5,6 +5,9 @@ import google__btn from '../assets/google__btn.svg'
 const Auth: React.FC = () => {
 
   const navigate = useNavigate()
+  const handleGoogleAuth = () => {
+    window.open('http://localhost:8000/auth/google/callback', '_self')
+  }
 
   return (
     <div className='auth'>
@@ -13,7 +16,7 @@ const Auth: React.FC = () => {
         <p>A REAL TIME QIWZ APPLICATION</p>
       </div>
 
-      <div className="auth__google_btn" onClick={()=>navigate('/public-games')}>
+      <div className="auth__google_btn" onClick={()=>handleGoogleAuth()}>
         <img src={google__btn} alt="google-btn" />
         Continue with Google
       </div>

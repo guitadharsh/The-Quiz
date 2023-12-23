@@ -8,7 +8,8 @@ dotenv.config();
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: process.env.REDIRECT_URL,
+    callbackURL: '/auth/google/callback',
+    scope: ['profile', 'email']
 },
     async function (accessToken, refreshToken, profile, cb) {
         // Check if the user already exists in the database
