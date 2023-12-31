@@ -1,33 +1,29 @@
 {
-  "name": "quiz_server",
+  "name": "quiz_backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "a production grade real time quiz application's backend server with express and socket frameworks  ",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/guitadharsh/The-Quiz.git"
   },
-  "author": "guitadharsh",
+  "author": "Adharsh (Full stack dev)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/guitadharsh/The-Quiz/issues"
   },
   "homepage": "https://github.com/guitadharsh/The-Quiz#readme",
   "dependencies": {
-    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "express-session": "^1.17.3",
-    "mongodb": "^6.3.0",
-    "mongoose": "^8.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
     "nodemon": "^3.0.2",
-    "passport": "^0.7.0",
-    "passport-google-oauth2": "^0.2.0",
-    "passport-google-oauth20": "^2.0.0"
+    "prettier": "^3.1.1"
   }
 }

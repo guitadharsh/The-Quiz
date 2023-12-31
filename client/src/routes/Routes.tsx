@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import axios from 'axios'
 
 import MainLayout from '../layout/MainLayout'
 import { Auth, NotFound, PublicGames, MyGames, CreateGame, PlayGround, JoinGame } from '../scenes'
 
 const AppRoutes: React.FC = () => {
+
+    useEffect(() => {
+        axios.get('/auth/get-user')
+            .then((res) => {
+                console.log('res', res)
+            })
+            .catch((err) => { throw err })
+    }, [])
     return (
         <Routes>
             <Route path="*" element={<NotFound />} />
