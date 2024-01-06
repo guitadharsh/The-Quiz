@@ -1,7 +1,7 @@
 {
   "name": "quiz_backend",
   "version": "1.0.0",
-  "description": "a production grade real time quiz application's backend server with express and socket frameworks  ",
+  "description": "a production grade real time quiz application's backend server with express and socket frameworks",
   "main": "index.js",
   "type": "module",
   "scripts": {

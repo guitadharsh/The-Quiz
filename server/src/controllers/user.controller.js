@@ -22,18 +22,19 @@ const registerUser = asyncHandler(async (req, res) => {
         throw new ApiError(409, 'Email or Username is already in use')
     }
 
-    const avatarPath = req.files?.avatar[0]?.path
+    const avatarPath = req.file?.path
     if (!avatarPath) {
         throw new ApiError(400, 'User profile picture required')
     }
-
+    
     const avatarLink = await uploadOnCloudinary(avatarPath)
+
     if (!avatarLink) {
-        throw new ApiError(400, 'User profile picture required')
+        throw new ApiError(400, 'Cloudinary profile picture saving failed')
     }
 
     const user = await User.create({
-        username: username.toLoverCase(),
+        username: username.toLowerCase(),
         email,
         fullname,
         password,
