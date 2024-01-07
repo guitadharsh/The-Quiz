@@ -66,7 +66,6 @@ userSchema.method.generateAccessToken = function (next) {
         {
             expiresIn: process.env.ACCESS_TOKEN_EXPIRY
         }
-
     )
 }
 
