@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
                 </div>
 
                 <div className="navbar__profile" onClick={() => handleLogout()}>
-                    <p>Robin Das</p>
+                    <p>Robin Dx</p>
                     <div className="navbar__profile--pic">
                         <img src={ProfileImage} alt="navbar-logo" />
                     </div>

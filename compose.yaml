@@ -1,0 +1,44 @@
+version: '3.8'
+  #specify the version of docker compose
+
+  # bind all services together client, server, db
+services:
+  # client service
+  web:
+    # client depends on api so api should run first 
+    depends_on:
+      - api
+    build: ./client
+    ports:
+      - 5173:5173 # port mapping
+    environment:
+      VITE_API_URL: http://localhost:8000 # expose enviornment
+      # watching for any changes to rebuild the image and sycing changes in client  
+    develop:
+      watch:
+        - path: ./client/package.json
+          action: rebuild
+        - path: ./client/package-lock.json
+          action: rebuild
+        - path: ./client
+          target: app
+          action: sync
+
+  # server service
+  api:
+    build: ./server
+    ports:
+      - "8000:8000" # port mapping
+
+    environment:
+      - DB_URL=mongodb+srv://adharshd100:QWIZqwiz1@quizcluster0.0zjudhy.mongodb.net/?retryWrites=true&w=majority
+
+    develop:
+      watch:
+        - path: ./server/package.json
+          action: rebuild
+        - path: .server/package-lock.json
+          action: rebuild
+        - path: ./server
+          target: /app
+          action: sync
